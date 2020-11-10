@@ -1,0 +1,75 @@
+body {
+  margin: 0;
+  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
+    'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
+    sans-serif;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+code {
+  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
+    monospace;
+}
+
+.gutter-box {
+  cursor: pointer;
+}
+
+@media only screen and (min-width: 320px) and (max-width: 800px) {
+  /*cols overview*/
+  .list-break .ant-row.ant-row-center {
+    flex-direction: column;
+  }
+
+  /*cols detail*/
+  .poster__break .ant-row {
+    flex-direction: column;
+  }
+
+  .poster__break .ant-row .ant-col.ant-col-13 {
+    flex: 0 0 100%;
+    max-width: 100%;
+  }
+
+  /*footer*/
+  footer .ant-row {
+    flex-direction: column;
+  }
+}
+
+@media only screen and (min-width: 800px) {
+  /*row overview*/
+  .list-break .ant-row.ant-row-center {
+    flex-direction: row;
+  }
+
+  /*row detail*/
+  .poster__break .ant-row {
+    flex-direction: row;
+  }
+
+ /*footer*/
+ footer .ant-row {
+    flex-direction: row;
+  }
+}
+
+/* Footer */
+footer.ant-layout-footer {
+  background: #333333;
+}
+
+.ant-layout-footer ul,
+.ant-layout-footer ul li {
+  white-space: nowrap;
+  list-style: none;
+  color: white;
+}
+
+.ant-layout-footer ul li a {
+  text-decoration: underline;
+  color: white;
+  font-weight: bold;
+}
+
